@@ -14,19 +14,15 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    
      <Navbar/>
     <Routes>
-
       <Route path='/' element={<Home/>}  />
       <Route path='/about' element={<About/>}  />
       <Route path='/enroll_now' element={<Enroll_now/>}  />
       <Route path='/now_hiring' element={<Now_hiring/>}  />
       <Route path='/contact_us' element={<Contact_us/>}  />
-
     </Routes>
       <Footer/>
-    
     </BrowserRouter>
     </>
   )

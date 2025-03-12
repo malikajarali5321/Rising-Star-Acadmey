@@ -3,6 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from '../../../public/logo.jpg'
 
 const Navbar = () => {
   const [mode, setmode] = useState(0)
@@ -35,10 +36,10 @@ const Navbar = () => {
 
   }
   return (
-    <div className='fixed w-[100%] z-[9999]'>
+    <div className='fixed h-20 w-[100%] z-[9999]'>
       <div className='bg-[#141414] h-20'>
         <div className='flex items-center justify-between w-full px-16 py-2 max-lg:px-8 max-md:px-4 '>
-          <h2 className='text-3xl text-[gold] font-semibold'><a href="#home">RSA.</a></h2>
+          <img className="w-10" src={logo} alt="" />
           <div className='flex items-center py-3'>
             <ul className='flex gap-10 text-xl text-white max-lg:hidden '>
               <NavLink to={"/"} className="hover:text-[gold]" >Home</NavLink>
